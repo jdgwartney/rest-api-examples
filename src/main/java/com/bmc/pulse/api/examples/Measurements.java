@@ -4,6 +4,7 @@ package com.bmc.pulse.api.examples;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
+
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -13,7 +14,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Generated("org.jsonschema2pojo")
-@JsonPropertyOrder({ "result" })
+@JsonPropertyOrder({"result"})
 public class Measurements {
 
     @JsonProperty("result")
@@ -22,9 +23,7 @@ public class Measurements {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
-     * 
-     * @return
-     *     The result
+     * @return The result
      */
     @JsonProperty("result")
     public Result getResult() {
@@ -32,9 +31,7 @@ public class Measurements {
     }
 
     /**
-     * 
-     * @param result
-     *     The result
+     * @param result The result
      */
     @JsonProperty("result")
     public void setResult(Result result) {
