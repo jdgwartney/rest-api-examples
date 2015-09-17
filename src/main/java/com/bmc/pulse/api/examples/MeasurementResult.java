@@ -25,9 +25,6 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-/**
- * Top level class of Notification JSON to Java Objects
- */
 public class MeasurementResult implements Serializable {
 
     private static final long serialVersionUID = 141334700285462329L;
@@ -42,8 +39,8 @@ public class MeasurementResult implements Serializable {
         return builder.toString();
     }
 
-    public static MeasurementResult load(String resource) throws URISyntaxException {
-        Measurements instance = new AlarmNotification();
+    public static Measurements load(String resource) throws URISyntaxException {
+        Measurements instance = new Measurements();
 
         ClassLoader classLoader = instance.getClass().getClassLoader();
         URL url = classLoader.getResource(resource);

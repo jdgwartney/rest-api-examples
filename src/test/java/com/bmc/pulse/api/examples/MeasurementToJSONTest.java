@@ -26,7 +26,7 @@ public class MeasurementToJSONTest {
 
     @Test
     public void testJSON() throws InterruptedException {
-        Assert.assertTrue(true);
+        MeasurementResult result = new MeasurementResult.load("sample-measurements.json");
     }
 
 }
